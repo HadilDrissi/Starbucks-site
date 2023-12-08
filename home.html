@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Starbucks_Corporation_Logo_2011.svg.png">
+    
+</head>
+<body>
+    
+   <section>
+    <div class="circle"></div>
+     <header>
+        <a href="#" ><img src="/img/logo.png" class="logo" alt=""></a>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/reservation.html">Reservation</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/testimonial.html">Testimonial</a></li>
+        </ul>
+     </header>
+     <div class="content">
+         <div class="textbox">
+               <h2>It's not just a coffee <br>It's <span>Starbucks</span></h2>
+               <p>Starbucks Corp (Starbucks) is a specialty coffee retailer.
+                 It roasts, markets, and retails specialty coffee.
+                 The company, through its stores, offers several blends of coffee, 
+                 handcrafted beverages, merchandise, and food items.</p>
+                <a href="#">Learn More</a>
+         </div>
+         <div class="imgBox">
+             <img src="/img/img1.png" class="starbucks">
+         </div>
+     </div>
+     <ul class="thumb">
+        <li><img src="img/thumb1.png" onclick="imgSlider('/img/img1.png');changeCircleColor('#017143')"></li>
+        <li><img src="img/thumb2.png" onclick="imgSlider('/img/img2.png');changeCircleColor('#eb7495')"></li>
+        <li><img src="img/thumb3.png" onclick="imgSlider('/img/img3.png');changeCircleColor('#d752b1')"></li>
+     </ul>
+     <ul class="sci">
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjkpqCoqsj-AhWE2KQKHfV-AAwQFnoECAoQAQ&url=https%3A%2F%2Fwww.facebook.com%2FStarbucks%2F&usg=AOvVaw2gibm4ZtHotqhJLuupjHDm"><img src="/img/facebook.png" ></a></li>
+        <li><a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/img/twitter.png" ></a></li>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiO-pzCqsj-AhUCr6QKHQ7FCcAQFnoECAkQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fstarbucks%2F%3Fhl%3Den&usg=AOvVaw1V9nfk7EoxwVCsR4fDm1O_"><img src="/img/instagram.png" ></a></li>
+     </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle =document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
